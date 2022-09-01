@@ -1,5 +1,7 @@
 package 数组.d_螺旋矩阵.ac01_lc59_220830_medium;
 
+import java.util.concurrent.atomic.AtomicInteger;
+
 /**
  * Created with IntelliJ IDEA.
  * User: 13498
@@ -29,6 +31,8 @@ public class better {
             }
             left++;
         }
+        AtomicInteger atomicInteger = new AtomicInteger();
+        atomicInteger.incrementAndGet();
         return res;
     }
 }
