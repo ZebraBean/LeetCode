@@ -1,0 +1,4 @@
+﻿  my.cpp
+my.obj : error LNK2005: "struct ListNode * __cdecl removeElements(struct ListNode *,int)" (?removeElements@@YAPAUListNode@@PAU1@H@Z) 已经在 better.obj 中定义
+MSVCRTD.lib(exe_main.obj) : error LNK2019: 无法解析的外部符号 _main，函数 "int __cdecl invoke_main(void)" (?invoke_main@@YAHXZ) 中引用了该符号
+D:\a_zebra\0_a_Java\LeetCode\LeetCode_cpp\Debug\LeetCode_cpp.exe : fatal error LNK1120: 1 个无法解析的外部命令
