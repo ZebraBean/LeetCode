@@ -18,10 +18,13 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="链表\a_移除链表元素\a_wa_lc203_220902_easy\better.cpp">
+    <ClCompile Include="链表\a_移除链表元素\a_wa_220902\better.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="链表\a_移除链表元素\a_wa_lc203_220902_easy\my.cpp">
+    <ClCompile Include="链表\a_移除链表元素\a_wa_220902\my.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="链表\b_设计链表\a_ac_220902\my.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
