@@ -3,3 +3,8 @@ untitled/untitled.iml
 LeetCode_cpp/Debug/
 LeetCode_cpp/.vs/
 LeetCode_cpp/LeetCode_cpp/Debug/
+*.txt
+*.sln
+*.vcxproj
+*.user
+*.filters
