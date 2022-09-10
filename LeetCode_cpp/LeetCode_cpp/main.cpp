@@ -1,17 +1,12 @@
-#include<iostream>
-#include<map>
-#include<vector>
-#include<algorithm>
-#include<string>
+#include <algorithm>
+#include <iostream>
+#include <map>
+#include <string>
+#include <vector>
 using namespace std;
-int main()
-{
-	struct a
-	{
-		short a;
-		int b;
-		double c;
-	};
-	cout << sizeof(a);
+int main() {
+	string s = "abc";
+	s[1] = 'e';
+	cout << s << endl;
 	return 0;
 }
