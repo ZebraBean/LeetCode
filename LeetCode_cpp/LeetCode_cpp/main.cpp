@@ -7,9 +7,15 @@
 #include <assert.h>
 using namespace std;
 
+void test(int a[]) {
+	for (int i = 0; i < sizeof(a) / sizeof(int); i++) {
+		cout << a[i];
+	}
+}
 int main() {
-	string s = "123";
-
-	cout << s << endl;
+	int a = 0;
+	map<int*, int> map;
+	map[&a] = 1;
+	cout << map[&a];
 	return 0;
 }
