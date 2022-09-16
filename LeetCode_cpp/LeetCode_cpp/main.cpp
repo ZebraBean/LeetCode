@@ -18,11 +18,6 @@ void test(int a[]) {
 int main() {
 	int a = 0x01020304;
 	int ans[5] = { 0 };
-	for (auto& i : ans) {
-		i = 1;
-	}
-	for (auto i : ans) {
-		cout << i << endl;
-	}
+
 	return 0;
 }
