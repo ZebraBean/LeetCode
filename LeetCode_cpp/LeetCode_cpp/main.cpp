@@ -15,9 +15,30 @@ void test(int a[]) {
 		cout << a[i];
 	}
 }
+class A {
+public:
+	A(int a = 10) {
+		this->a = a;
+	}
+	void print() {
+		cout << "aaaaaaa";
+	}
+private:
+	int a;
+};
+class B {
+public:
+	B() {
+		val = 15;
+	}
+private:
+	int val;
+	A a1;
+	A a2;;
+};
 int main() {
 	int a = 0x01020304;
 	int ans[5] = { 0 };
-
+	B b1;
 	return 0;
 }
