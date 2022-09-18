@@ -40,5 +40,6 @@ int main() {
 	int a = 0x01020304;
 	int ans[5] = { 0 };
 	B b1;
+	int c;
 	return 0;
 }
