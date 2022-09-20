@@ -15,6 +15,13 @@ void test(int a[]) {
 		cout << a[i];
 	}
 }
+void fun(int* a) {
+	cout << "int*";
+}
+void fun(int a) {
+	cout << "int";
+}
+
 class A {
 public:
 	A(int a = 10) {
@@ -41,5 +48,6 @@ int main() {
 	int ans[5] = { 0 };
 	B b1;
 	int c;
+	fun(0);
 	return 0;
 }
