@@ -11,9 +11,9 @@ public:
 			if (it == hashMap.end()) {
 				hashMap[nums[i]] = i;
 			} else {
-				return{ i,it->second };
+				return vector<int>{ i, it->second };
 			}
 		}
-		return {};
+		return vector<int>{};
 	}
 };
