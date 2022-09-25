@@ -11,17 +11,12 @@ void Func(int a = 10, int b = 20, int c = 30) {
 	cout << "b = " << b << endl;
 	cout << "c = " << c << endl;
 }
+template<class T> T Add(const T& left, const T& right) {
+	return left + right;
+}
 int main() {
-	int* a = new int[1024 * 1024];
-	a[0] = 1;
-	cout << a[0] << endl << a[1];
-	const int& z = 2;
-	int aa = 1;;
-	int& const b = aa;
-	aa = 6;
-	int& c = b;
-	c = 2;
-	b = 3;
-	//const& int d = aa;//´íÎó
+	string s;
+	s.resize(1000);
+	cout << s.size() << endl << s.capacity();
 	return 0;
 }
