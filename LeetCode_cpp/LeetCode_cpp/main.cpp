@@ -15,8 +15,9 @@ template<class T> T Add(const T& left, const T& right) {
 	return left + right;
 }
 int main() {
-	string s;
-	s.resize(1000);
-	cout << s.size() << endl << s.capacity();
+	char* a = new char[10];
+	const char* ss = "123";
+	char b[3] = "a";
+	cout << typeid("abc").name() << endl << typeid(b).name();
 	return 0;
 }
