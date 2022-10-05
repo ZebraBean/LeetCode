@@ -6,6 +6,8 @@
 #include <typeinfo>
 #include <assert.h>
 using namespace std;
+
+//typedef int* a;
 class car {
 public:
 	virtual void drive() = 0 {
@@ -20,6 +22,13 @@ class baoma : public car {
 };
 
 int main() {
+	//typedef char* a;
+	string s;
+	s += to_string(1);
+
+	cout << s;
+	//a aa;
+	//cout << typeid(aa).name();
 	//string a = "a";
 	//char* a = new char[3];
 	//char* b = a;
