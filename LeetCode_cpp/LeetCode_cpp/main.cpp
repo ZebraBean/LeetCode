@@ -6,35 +6,32 @@
 #include <typeinfo>
 #include <assert.h>
 using namespace std;
-
-//typedef int* a;
-class car {
+class B {
 public:
-	virtual void drive() = 0 {
-		cout << "haha";
+	B() : b(4) {
 	}
+	void funB() {
+		//cout << typeid(this).name() << endl;
+	}
+private:
 	int b;
 };
-class baoma : public car {
-	void drive() {
+
+class A {
+public:
+	A() :b(B()) {
 	}
-	int a;
+	void func() const {
+		//b.funB();
+
+		cout << typeid(b).name();
+	}
+
+private:
+	B b;
 };
 
 int main() {
-	//typedef char* a;
-	string s;
-	s += to_string(1);
-
-	cout << s;
-	//a aa;
-	//cout << typeid(aa).name();
-	//string a = "a";
-	//char* a = new char[3];
-	//char* b = a;
-	//int* n;
-	//cout << sizeof(a) << endl;
-	//cout << sizeof(b) << endl;
-	//cout << sizeof(n) << endl;
-	return 0;
+	A a;
+	a.func();
 }
