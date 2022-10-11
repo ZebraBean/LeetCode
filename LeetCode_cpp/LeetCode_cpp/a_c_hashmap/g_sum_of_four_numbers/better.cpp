@@ -25,7 +25,7 @@ public:
 				int left = j + 1;  //第三个数
 				int right = nums.size() - 1;  //第四个数
 				while (left < right) {
-					long res = long(nums[i] + nums[j] + nums[left] + nums[right]);  //注意这里要用long强转，否则会溢出
+					long res = (long)nums[i] + nums[j] + nums[left] + nums[right];  //注意这里要用long强转，否则会溢出
 					if (res > target) {  //四数之和 > target，让right--，使得四数之和减小
 						right--;
 					} else if (res < target) {  //四数之和 < target，让left++，使得四数之和变大
