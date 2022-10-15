@@ -20,27 +20,64 @@ struct Goods
 		cout << "second";
 	}
 };
+
 int main() {
-	// C/C++98
-	int i = 0;
-	double d1 = i;
-	const double& d2 = i;
+	Person p;
+	Teacher t;
 
-	// C++98
-	string str1 = "11111";
-	const string& str2 = "11111";
+	p = t;
+	Person& pr = s;
+	Person* pt = &s;
 
-	// C++11
-	//Goods g1 = { "苹果", 2.1, 5 };
-	Goods g3 = { "苹果", "苹果", "苹果" };
-
-	//const Goods& g2 = { "苹果", 2.1, 5 };
-
-//int a = 0x01020304;
-	bool b = 1.1;
-	double a = 3.3;
-	unsigned c = 4;
-	cout << b;
-	b = c;
-	cout << b;
+	return 0;
 }
+class Person {
+};
+class Teacher : public Person
+{
+protected:
+	int _num; //教师编号
+};
+
+Person(const Person& p)
+	: _name(p._name)
+{
+	cout << "Person(const Person& p)" << endl;
+}
+
+Teacher(const Teacher& s)
+	:Person(s)
+	, _num(s._num)
+{
+	cout << "Teacher(const Teacher& s)" << endl;
+}
+Teacher& operator=(const Teacher& s)
+{
+	if (this != &s)
+	{
+		Person::operator=(s);
+		_num = s._num;
+	}
+
+	cout << "Teacher& operator=(const Teacher& s)" << endl;
+
+	return *this;
+}
+class A
+{
+	//friend class B;
+public:
+	static A CreateObj()
+	{
+		return A();
+	}
+}
+
+class Person
+	...
+	class Student : virtual public Person
+	...
+	class Teacher : virtual public Person
+	...
+	class Assistant : public Student, public Teacher
+	...
