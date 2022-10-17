@@ -20,6 +20,5 @@ struct Goods
 		cout << "second";
 	}
 };
-
 int main() {
 }
