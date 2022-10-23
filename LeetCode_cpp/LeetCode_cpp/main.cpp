@@ -16,4 +16,7 @@ private:
 	int _zebra;
 };
 int main() {
+	string s = "123";
+	int a = stoi(s);
+	cout << a;
 }
