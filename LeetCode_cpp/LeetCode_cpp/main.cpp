@@ -18,5 +18,6 @@ private:
 int main() {
 	string s = "123";
 	int a = stoi(s);
-	cout << a;
+	cout << a; aaaaaaaaaa
+    changed something
 }
